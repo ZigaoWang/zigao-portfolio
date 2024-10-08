@@ -1,0 +1,169 @@
+/* This is a comment in an external style sheet.  You can copy and paste and reference anthing that you notice */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* This is a comment Where I learned to change the font for the entire body of the HTML page. */
+body{
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 20px; 
+    align-items: center;
+    position: fixed;
+    background-color: rgb(144, 105, 90);
+    z-index: 999;
+    top: 0;
+    height: 76px;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+header li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight:bold;
+    position: relative;
+    
+}
+
+header li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header li a:hover::before {
+    transform: scaleX(1);
+}
+
+#hero {
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section ul, ol {
+    list-style-position: inside;
+    padding: 5px 30px;
+  }
+
+section{
+    width: 100%;
+    float: left;
+    min-height: 100vh;
+    position: relative;
+    padding: 25px;
+    font-size: 25px;
+}
+
+#about{
+     background-color: rgb(249, 221, 197);
+}
+
+#safety{
+     background-color: rgb(197, 197, 197);
+}
+
+#coding{
+     background-color: rgb(165, 199, 182);
+}
+
+#contact{
+     background-color: rgb(138, 170, 149);
+}
+
+a.top {
+    position: relative;
+    top:-101px;
+    display: block;
+    height: 0;
+    width:0;
+}
+
+/* Responsive */
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)  
+
+    section{
+        font-size: 12px;
+    }
+
+    #menu li a{
+        font-size: 30px;
+    }
+
+.row {
+    display: flex;
+    }
+
+.column {
+    flex: 50%;
+    padding-right: 5%;
+    }
+    
+.columnflex {
+    float: left;
+    padding-right: 5%;
+    }
+
+    .leftcolumn {
+        width: 25%;
+        background-color: #f1f1bf;
+    }
+
+    .rightcolumn {
+        width: 75%%;
+        background-color: #deb887;
+       }
+
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ff5d22 ;
+        font-size: 1.8em  (em is preferred to px height);
+    }
+
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(44, 52, 118);
+        font-size: 1.5em;
+        padding-bottom: 5px;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    p.a {
+        font-size: 0.6em;
+        font-family: Arial, Helvetica, sans-serif;
+    }

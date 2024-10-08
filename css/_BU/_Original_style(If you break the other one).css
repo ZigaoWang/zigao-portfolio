@@ -1,0 +1,138 @@
+/* This is a comment in an external style sheet.  You can copy and paste and reference anthing that you notice */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* This is a comment Where I learned to change the font for the entire body of the HTML page. */
+body{
+    font-size: 100%;
+    font-family: Apple Chancery;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 20px; 
+    align-items: center;
+    position: fixed;
+    background-color: rgb(182, 165, 165);
+    z-index: 999;
+    top: 0;
+    height: 76px;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+header li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight:bold;
+    position: relative;
+    
+}
+
+header li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header li a:hover::before {
+    transform: scaleX(1);
+}
+
+#hero {
+    min-height: 100vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section ul, ol {
+    list-style-position: inside;
+    padding: 5px 30px;
+  }
+
+section{
+    width: 100%;
+    float: left;
+    min-height: 100vh;
+    position: relative;
+    padding: 25px;
+    font-size: 25px;
+}
+
+#about{
+     background-color: rgb(153, 202, 214);
+}
+
+#safety{
+     background-color: rgb(159, 213, 238);
+}
+
+#coding{
+     background-color: rgb(203, 204, 148);
+}
+
+#contact{
+     background-color: rgb(138, 170, 149);
+}
+
+a.top {
+    position: relative;
+    top:-101px;
+    display: block;
+    height: 0;
+    width:0;
+}
+
+/* Responsive */
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+
+    section{
+        font-size: 40px;
+    }
+
+    #menu li a{
+        font-size: 30px;
+    }
+}
+.row {
+
+    display: flex;
+    
+    }
+    
+    
+.column {
+
+    flex: 50%;
+    
+    }
