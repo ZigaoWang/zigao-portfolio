@@ -172,6 +172,7 @@ main {
     font-size: 3rem;
     margin-bottom: 1.25rem;
     color: var(--text-color);
+    text-align: left;
 }
 
 .hero-text p {
