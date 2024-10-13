@@ -148,7 +148,7 @@ main {
 .hero-image img {
     bottom: -4rem;
     position: absolute;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 1rem);
     filter: drop-shadow(0 0.625rem 1.25rem rgba(0, 0, 0, 0.2));
     transition: transform 0.3s ease;
 }
@@ -160,7 +160,7 @@ main {
 .hero-text {
     flex: 1;
     margin-top: -10%;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
 }
 
 .hero-text h1 {
